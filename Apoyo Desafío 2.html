@@ -126,7 +126,13 @@ prevIsapre.forEach(function(persona){
     document.write(`<p>${persona.paciente} - ${persona.prevision}</p>`)
 });
 
+var preFonasa = traumatologia.filter(function(cita){
+    return cita.prevision ==="FONASA";
+    });
 
+preFonasa.forEach(function(persona){
+    document.write(`<p>${persona.paciente} - ${persona.prevision}</p>`)
+})
 
 //Agregar código para el desafio 2 aquí
 
